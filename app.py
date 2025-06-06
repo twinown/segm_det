@@ -52,17 +52,9 @@ for model_name, picture_files in models.items():
 
     for idx, file in enumerate(picture_files):
         image_path = os.path.join(pictures_folder, file)
-        st.write(f"Проверка: {image_path}")  # Выводим путь, чтобы видеть, что именно пытаемся открыть
-        try:
-            with open(image_path, "rb") as f:
-                data = f.read(10)
-                st.write(f"Первые 10 байт: {data}")
-            image = Image.open(image_path)
-            st.write(f"Успешно открыт {file}")
-            with cols[idx % 2]:
-                st.image(image, caption=file, use_container_width=True)
-        except Exception as e:
-            st.error(f"Ошибка при загрузке {file}: {e}")
+        image = Image.open(image_path)
+        with cols[idx % 2]:
+            st.image(image, caption=file, use_container_width=True)
           
 
 
