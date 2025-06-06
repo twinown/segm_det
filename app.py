@@ -36,7 +36,7 @@ st.markdown("### 👉 Здесь вы можете увидеть основны
 
 
 # Путь к папке с картинками
-pictures_folder = "/Users/nikita/ds_bootcamp/Niyaz/phase-2/ds-phase-2/09-cv/proj_face_det/pictures"
+pictures_folder = "pictures"
 
 # Определяем, какие картинки для какой модели
 models = {

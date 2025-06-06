@@ -9,7 +9,7 @@ import pandas as pd
 
 #yolo12
 
-model_path = "/Users/nikita/ds_bootcamp/Niyaz/phase-2/ds-phase-2/09-cv/proj_face_det/models/best.pt"
+model_path = "models/best.pt"
 
 # Функция размытия
 def blur_faces(image_pil, model_path=model_path):

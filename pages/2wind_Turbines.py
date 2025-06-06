@@ -15,7 +15,7 @@ st.title("Детекция ветряных турбин")
 option = st.radio("Выберите источник:", ["Загрузить файл", "Ввести ссылки (по одной в строке)"])
 
 # Модель (замени на путь к своей модели)
-model_path =  "/Users/nikita/ds_bootcamp/Niyaz/phase-2/ds-phase-2/09-cv/proj_face_det/models/best2.pt"
+model_path =  "models/best2.pt"
 model = YOLO(model_path)
 
 if option == "Загрузить файл":

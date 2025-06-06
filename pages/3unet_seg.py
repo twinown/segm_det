@@ -63,7 +63,7 @@ class UNet(nn.Module):
 @st.cache_resource
 def load_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model_path = "/Users/nikita/ds_bootcamp/Niyaz/phase-2/ds-phase-2/09-cv/proj_face_det/models/aerial_forest_best.pt"
+    model_path = "models/aerial_forest_best.pt"
     
     try:
         model = torch.jit.load(model_path, map_location=device)
