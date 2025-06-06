@@ -131,7 +131,7 @@ tinycss2==1.4.0
 toml==0.10.2
 tomli==2.2.1
 torch>=2.3.0
-torchaudio==2.2.2
+torchaudio>=2.0.0
 torchmetrics==1.7.2
 torchutils==0.0.4
 torchvision==0.17.2
