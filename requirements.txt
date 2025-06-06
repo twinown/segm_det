@@ -77,7 +77,7 @@ nest-asyncio==1.6.0
 networkx==3.4.2
 notebook==7.4.3
 notebook_shim==0.2.4
-numpy==1.26.1
+numpy>=1.26.2
 opencv-python==4.11.0.86
 overrides==7.7.0
 packaging==24.2
@@ -130,7 +130,7 @@ timm==1.0.15
 tinycss2==1.4.0
 toml==0.10.2
 tomli==2.2.1
-torch==2.2.2
+torch>=2.3.0
 torchaudio==2.2.2
 torchmetrics==1.7.2
 torchutils==0.0.4
