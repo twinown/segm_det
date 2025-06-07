@@ -40,7 +40,7 @@ pictures_folder = "pictures"
 
 # Определяем, какие картинки для какой модели
 models = {
-    "YOLOv12_medium": ["fd_total.jpg"],
+    "YOLOv12_medium": ["ss.jpg"],
     "YOLOv8_medium": ["turb1.jpg", "turb2.jpg", "turb3.jpg", "turb4.jpg"],
     "U-Net": ["seg.jpg"]
 }
