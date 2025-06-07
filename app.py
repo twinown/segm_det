@@ -2,6 +2,12 @@ import streamlit as st
 from PIL import Image
 import os
 
+st.markdown("### Проверяем, что реально есть на сервере")
+
+for root, dirs, files in os.walk("."):
+    st.write(f"Папка: {root}")
+    st.write(f"Файлы: {files}")
+
 # Настройки страницы
 st.set_page_config(
     page_title="Детекция и Сегментация",
