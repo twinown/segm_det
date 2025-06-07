@@ -57,7 +57,7 @@ for model_name, picture_files in models.items():
             with open(image_path, "rb") as f:
                 image_bytes = f.read()
             with cols[idx % 2]:
-                st.image(image_bytes, caption=file, use_container_width=True)
+                st.image(image_bytes, caption=file)
         except Exception as e:
             st.error(f"Ошибка при загрузке {file}: {e}")
           
