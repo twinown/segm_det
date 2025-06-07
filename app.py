@@ -2,11 +2,6 @@ import streamlit as st
 from PIL import Image
 import os
 
-st.markdown("### Проверяем, что реально есть на сервере")
-
-for root, dirs, files in os.walk("."):
-    st.write(f"Папка: {root}")
-    st.write(f"Файлы: {files}")
 
 # Настройки страницы
 st.set_page_config(
@@ -58,9 +53,13 @@ for model_name, picture_files in models.items():
 
     for idx, file in enumerate(picture_files):
         image_path = os.path.join(pictures_folder, file)
-        image = Image.open(image_path)
-        with cols[idx % 2]:
-            st.image(image, caption=file, use_container_width=True)
+        try:
+            with open(image_path, "rb") as f:
+                image_bytes = f.read()
+            with cols[idx % 2]:
+                st.image(image_bytes, caption=file, use_container_width=True)
+        except Exception as e:
+            st.error(f"Ошибка при загрузке {file}: {e}")
           
 
 
